@@ -1,27 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App XDDD"/>
-  <HelloWorld msg="Welcome to Your Vue.js App XDDD2"/>
+	<div class="container">
+		<CycleSettings></CycleSettings>
+		<TimeSettings></TimeSettings>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import CycleSettings from './components/CycleSettings';
+import TimeSettings from './components/TimeSettings';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: 'App',
+	components: {
+		CycleSettings,
+		TimeSettings,
+	},
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style></style>
