@@ -67,7 +67,7 @@ export default {
 	padding: 10px;
 }
 
-.time_content {
+.time_info {
 	display: flex;
 	justify-content: space-around;
 	border: gray 2px solid;
