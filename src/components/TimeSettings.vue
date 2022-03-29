@@ -3,7 +3,9 @@
     <h2 class="time_title">Time Length Settings</h2>
     <div class="time_content">
       <span
-        ><input
+        >
+        <!-- @change: change start minute right away -->
+        <input
           type="number"
           :value="timerStartMinute"
           min="0"
