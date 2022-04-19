@@ -1,4 +1,5 @@
 <template>
+	<!-- <a-slider id="test" v-model:value="value1" :disabled="disabled" /> -->
 	<div class="cycle_section">
 		<h2 class="cycle_title">Cycle Settings</h2>
 		<div class="cycle_content">
@@ -10,11 +11,11 @@
 					-
 				</button>
 			</div>
-			<!-- <div class="hold">
+			<div class="hold1">
 				<h5>HOLD</h5>
-				<button class="add" @click="countHold++">+</button>
-				<h2>{{ countHold }}</h2>
-				<button class="sub" :disabled="countHold <= 0" @click="countHold--">
+				<button class="add" @click="countHold1++">+</button>
+				<h2>{{ countHold1 }}</h2>
+				<button class="sub" :disabled="countHold1 <= 0" @click="countHold1--">
 					-
 				</button>
 			</div>
@@ -22,10 +23,18 @@
 				<h5>OUT</h5>
 				<button class="add" @click="countOut++">+</button>
 				<h2>{{ countOut }}</h2>
-				<button class="sub" :disabled="countHold <= 0" @click="countOut--">
+				<button class="sub" :disabled="countOut <= 0" @click="countOut--">
 					-
 				</button>
-			</div> -->
+			</div>
+			<div class="hold2">
+				<h5>HOLD</h5>
+				<button class="add" @click="countHold2++">+</button>
+				<h2>{{ countHold2 }}</h2>
+				<button class="sub" :disabled="countHold2 <= 0" @click="countHold2--">
+					-
+				</button>
+			</div>
 		</div>
 	</div>
 </template>
@@ -33,8 +42,9 @@
 <script>
 export default {
 	name: 'CycleSettings',
+
 	data() {
-		return { countIn: 0, countHold: 0, countOut: 0 };
+		return { countIn: 0, countHold1: 0, countOut: 0, countHold2: 0 };
 	},
 	methods: {
 		add(val) {
@@ -42,6 +52,18 @@ export default {
 		},
 	},
 };
+// import { defineComponent, ref } from 'vue';
+// export default defineComponent({
+// 	setup() {
+// 		const value1 = ref<number>(0);
+// 		const disabled = ref<boolean>(false);
+
+// 		return {
+// 			value1,
+// 			disabled,
+// 		};
+// 	},
+// });
 </script>
 
 <style scoped>
@@ -65,11 +87,16 @@ export default {
 }
 
 .in,
-.hold,
+.hold1,
+.hold2,
 .out {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	padding: 20px;
+}
+
+.code-box-demo .ant-slider {
+	margin-bottom: 16px;
 }
 </style>

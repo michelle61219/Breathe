@@ -1,23 +1,52 @@
 <template>
-  <div class="container">
-    <CycleSettings></CycleSettings>
-    <TimeSettings></TimeSettings>
-    <Timer></Timer>
-  </div>
+	<div class="container">
+		<CycleSettings></CycleSettings>
+		<!-- <TimeSettings></TimeSettings>
+		<Timer></Timer> -->
+	</div>
+	<!-- <mainSettings></mainSettings> -->
+	<!-- <inhaleExhaleBg></inhaleExhaleBg> -->
 </template>
 
 <script>
-import CycleSettings from "./components/CycleSettings";
-import TimeSettings from "./components/TimeSettings";
-import Timer from "./components/Timer";
+// import { defineComponent } from 'vue';
+import CycleSettings from './components/CycleSettings';
+// import TimeSettings from './components/TimeSettings';
+// import Timer from './components/Timer';
+// import mainSettings from './components/mainSettings';
+// import inhaleExhaleBg from './components/inhaleExhaleBg';
+
+// export default defineComponent({
+// 	setup() {},
+// 	name: 'App',
+// 	components: {
+// 		CycleSettings,
+// 		// TimeSettings,
+// 		// Timer,
+// 		// mainSettings,
+// 		// inhaleExhaleBg,
+// 	},
+// });
+
 export default {
-  name: "App",
-  components: {
-    CycleSettings,
-    TimeSettings,
-    Timer,
-  },
+	name: 'App',
+	components: {
+		CycleSettings,
+		// TimeSettings,
+		// Timer,
+		// mainSettings,
+		// inhaleExhaleBg,
+	},
 };
 </script>
 
-<style></style>
+<style>
+body {
+	background-color: #fffacd;
+}
+
+img,
+svg {
+	vertical-align: initial;
+}
+</style>
